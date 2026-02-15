@@ -4,9 +4,17 @@ version = "1.0.0"
 edition = "2021"
 authors = ["MLo7"]
 description = "A very silly wavtool"
+license = "MIT"
+readme = "README.md"
 
 [dependencies]
 hound = "3.5"
 
 [target.'cfg(windows)'.build-dependencies]
 winres = "0.1"
+
+[package.metadata.bundle]
+name = "SillySeams"
+identifier = "com.mlo7ghinsan.sillyseams"
+icon = ["jiafei.icns", "jiafei.png"]
+category = "public.app-category.utilities"
