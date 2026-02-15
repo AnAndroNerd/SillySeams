@@ -8,5 +8,5 @@ description = "A very silly wavtool"
 [dependencies]
 hound = "3.5"
 
-[build-dependencies]
+[target.'cfg(windows)'.build-dependencies]
 winres = "0.1"
