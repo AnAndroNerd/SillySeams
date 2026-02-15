@@ -1,0 +1,12 @@
+[package]
+name = "SillySeams"
+version = "1.0.0"
+edition = "2021"
+authors = ["MLo7"]
+description = "A very silly wavtool"
+
+[dependencies]
+hound = "3.5"
+
+[build-dependencies]
+winres = "0.1"
