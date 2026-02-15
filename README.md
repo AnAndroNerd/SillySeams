@@ -28,9 +28,21 @@ Instead of traditional linear crossfading, it applies:
 
 - S-curve interpolation for smoother period morphing  
 - Period-aware stitching (WSOLA phase-matching) 
-- Dynamic compensation between crossfade points  
+- Dynamic compensation between crossfade points
 
 This results in more natural waveform continuity and reduced artifacts during note transitions.
 
 > 🥀 Built-in search window is 15ms  
 > Minor timing shifts may occur, though typically not noticeable...
+
+---
+Known Issues
+
+- Sometimes, SillySeams may not use the correct sentence components during rendering
+  
+  This is typically caused by cached render artifacts or it try to race itself and lost...
+  
+  ✅ **Fix:** Clear the problematic sentence cache and re-render
+  The issue usually resolves after doing so
+
+  If anyone wanna try to fix it, please do 😭
